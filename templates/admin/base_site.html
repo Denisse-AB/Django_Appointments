@@ -1,0 +1,29 @@
+{% extends "admin/base.html" %}
+
+{% block extrahead %}{{ block.super }}
+  <style>
+    :root {
+      --primary: #5c6e77;
+      --secondary: #417690;
+      --accent: #f1c95e;
+
+      --header-color: #ffc;
+      --header-branding-color: #fade48;
+      --header-bg: #171e21;
+
+      --link-fg: #235a75;
+      --link-hover-color: #488fd6;
+    }
+    .login #header h1 {
+      font-size: 25px;
+    }
+  </style>
+{% endblock%}
+
+{% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} | Appointments App{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">Appointments App</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
