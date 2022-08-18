@@ -3,7 +3,7 @@ import axios from 'axios'
 axios.defaults.xsrfHeaderName = 'X-CSRFToken'
 axios.defaults.xsrfCookieName = 'csrftoken'
 
-const url = '/post/'
+const url = 'post/'
 
 class PostService {
   static async insertAppointment (name, email, tel, date, time) {

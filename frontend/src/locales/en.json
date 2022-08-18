@@ -2,7 +2,7 @@
   "lang": "en",
   "message": "Welcome",
   "home": "Home",
-  "title": "Boilerplate Appointments App with Vue.js and Django Rest Framework",
+  "title": "Boilerplate Appointments App using Vue.js, Node.js, and Express",
   "name": "Name",
   "tel": "Phone",
   "date": "Select date",
@@ -14,6 +14,5 @@
   "day": "Your appointment was accepted for",
   "time": "at",
   "rejected":"Not available, choose a different time or day.",
-  "alert": "Something is wrong, try again!",
-  "inputAlert": "Please Select day and time"
+  "alert": "Something went wrong, try again!"
 }

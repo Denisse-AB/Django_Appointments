@@ -2,7 +2,7 @@
   "lang": "es",
   "message": "Hola",
   "home": "Inicio",
-  "title": "Boilerplate de App para sacar citas con Vue.js y Django Rest Framework",
+  "title": "Boilerplate de App para sacar citas en Vue.js, Node.js y Express",
   "name": "Nombre",
   "tel": "Teléfono",
   "date": "Escoje un día",
@@ -14,6 +14,5 @@
   "day": "Tu cita fue aceptada para el día",
   "time": "a las",
   "rejected": "Turno agotado, escoja otra Hora o Día.",
-  "alert": "Favor de tratar de nuevo!",
-  "inputAlert": "Por Favor, selecciona día y hora"
+  "alert": "Favor de tratar de nuevo!"
 }

@@ -20,8 +20,8 @@ defineRule('digits', digits)
 configure({
   validateOnInput: true,
   generateMessage: localize({
-    en,
-    es
+    es,
+    en
   })
 })
 
