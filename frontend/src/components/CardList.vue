@@ -118,7 +118,7 @@ const Submit = async () => {
     </p>
   </div>
   <ThankYou
-    :responseOk="responseOK"
+    :response-ok="responseOK"
     :date="data.date"
     :time="data.time"
   />
