@@ -17,7 +17,7 @@
     "@vee-validate/rules": "^4.6.7",
     "@vuepic/vue-datepicker": "^3.4.8",
     "axios": "^0.27.2",
-    "vee-validate": "^4.6.10",
+    "vee-validate": "^4.7.0",
     "vue": "^3.2.39",
     "vue-i18n": "^9.2.2"
   },
@@ -27,7 +27,7 @@
     "@vitejs/plugin-vue": "^3.1.2",
     "@vue/eslint-config-prettier": "^7.0.0",
     "autoprefixer": "^10.4.11",
-    "eslint": "^8.23.1",
+    "eslint": "^8.25.0",
     "eslint-plugin-vue": "^9.3.0",
     "postcss": "^8.4.17",
     "prettier": "^2.7.1",
