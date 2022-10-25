@@ -9,8 +9,8 @@ from .models import App
 
 
 class CreateAppointmentTests(TestCase):
-    def test_appointments_count(self, date='2022-04-13', time='13:00:00'):
-        q = App.objects.filter(date=date, time=time)
+    def test_appointments_count(self):
+        q = App.objects.filter(date='2022-08-01', time='11:00:00')
         count = q.count()
         self.assertIs(count > 3, False)
 
