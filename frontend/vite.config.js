@@ -1,16 +1,16 @@
 import { fileURLToPath, URL } from "node:url";
-import { resolve, dirname } from 'node:path';
+import { resolve, dirname } from "node:path";
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
-import vueI18n from '@intlify/vite-plugin-vue-i18n';
+import vueI18n from "@intlify/vite-plugin-vue-i18n";
 
 // https://vitejs.dev/config/
 export default defineConfig({
   server: {
     proxy: {
-      '/post': {
-        target: 'http://localhost:8000'
-      }
+      "/post": {
+        target: "http://localhost:8000",
+      },
     },
   },
   plugins: [
@@ -20,8 +20,8 @@ export default defineConfig({
       // compositionOnly: false,
 
       // you need to set i18n resource including paths !
-      include: resolve(dirname(fileURLToPath(import.meta.url)), '../locales'),
-    })
+      include: resolve(dirname(fileURLToPath(import.meta.url)), "../locales"),
+    }),
   ],
   resolve: {
     alias: {

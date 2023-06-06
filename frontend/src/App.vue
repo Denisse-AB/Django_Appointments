@@ -1,7 +1,7 @@
 <script setup>
-import CardLayout from './components/CardLayout.vue'
-import NavBar from './components/NavBar.vue'
-import AppFooter from './components/AppFooter.vue'
+import CardLayout from "./components/CardLayout.vue";
+import NavBar from "./components/NavBar.vue";
+import AppFooter from "./components/AppFooter.vue";
 </script>
 
 <template>

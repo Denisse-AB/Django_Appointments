@@ -1,51 +1,43 @@
 <script setup>
-import { ref, defineEmits, defineProps } from 'vue'
+import { ref } from "vue";
 import {
   Listbox,
   ListboxButton,
   ListboxOptions,
-  ListboxOption
-} from '@headlessui/vue'
+  ListboxOption,
+} from "@headlessui/vue";
 
 defineProps({
-  label: String
-})
+  label: String,
+});
 
 const hour = [
-  { value: null, text: '' },
-  { value: '11:00:00', text: '11:00 am' },
-  { value: '12:00:00', text: '12:00 pm' },
-  { value: '13:00:00', text: '1:00 pm' },
-  { value: '14:00:00', text: '2:00 pm' },
-  { value: '15:00:00', text: '3:00 pm' }
-]
-const selected = ref(hour[0])
+  { value: null, text: "" },
+  { value: "11:00:00", text: "11:00 am" },
+  { value: "12:00:00", text: "12:00 pm" },
+  { value: "13:00:00", text: "1:00 pm" },
+  { value: "14:00:00", text: "2:00 pm" },
+  { value: "15:00:00", text: "3:00 pm" },
+];
+const selected = ref(hour[0]);
 
-const emit = defineEmits(['customChange'])
+const emit = defineEmits(["customChange"]);
 
 const handleChange = (time) => {
-  emit('customChange', time)
-}
+  emit("customChange", time);
+};
 </script>
 
 <template>
   <div class="my-1 mx-auto">
-    <Listbox
-      v-model="selected"
-    >
+    <Listbox v-model="selected">
       <div>
         <ListboxButton
-          class="w-full tablet:w-56 border border-input-border cursor-default
-          bg-white py-2 pl-3 pr-10 text-left shadow-sm rounded-sm
-          focus:outline-none focus-visible:border-vue-green
-          focus-visible:ring-2 focus-visible:ring-white
-          focus-visible:ring-opacity-75 focus-visible:ring-offset-2
-          focus-visible:ring-offset-vue-green text-sm"
+          class="w-full tablet:w-56 border border-input-border cursor-default bg-white py-2 pl-3 pr-10 text-left shadow-sm rounded-sm focus:outline-none focus-visible:border-vue-green focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-vue-green text-sm"
         >
           <span class="block truncate">{{ label + selected.text }}</span>
           <span
-            class="pointer-events-none absolute inset-y-0
-            right-0 flex items-center pr-2"
+            class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2"
           >
           </span>
         </ListboxButton>
@@ -56,9 +48,7 @@ const handleChange = (time) => {
           leave-to-class="opacity-0"
         >
           <ListboxOptions
-            class="absolute mt-1 max-h-60
-            rounded-md bg-white py-1 text-base shadow-lg
-            ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm"
+            class="absolute mt-1 max-h-60 rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm"
           >
             <ListboxOption
               v-slot="{ active, selected }"
