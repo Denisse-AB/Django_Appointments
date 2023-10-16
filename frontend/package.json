@@ -17,7 +17,7 @@
     "@vee-validate/rules": "^4.7.2",
     "@vuepic/vue-datepicker": "^3.6.8",
     "axios": "^0.27.2",
-    "vee-validate": "^4.6.10",
+    "vee-validate": "^4.11.8",
     "vue": "^3.2.39",
     "vue-i18n": "^9.2.2"
   },
