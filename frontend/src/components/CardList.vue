@@ -2,7 +2,7 @@
 import { ref, reactive } from "vue";
 import { Form } from "vee-validate";
 import { useI18n } from "vue-i18n";
-import CardInput from "./CardInput.vue";
+import CardInput from "./cardinput.vue";
 import SelectInput from "./SelectInput.vue";
 import ThankYou from "./ThankYou.vue";
 import Datepicker from "@vuepic/vue-datepicker";
