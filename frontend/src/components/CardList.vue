@@ -2,7 +2,7 @@
 import { ref, reactive } from "vue";
 import { Form } from "vee-validate";
 import { useI18n } from "vue-i18n";
-import CardInput from "./cardinput.vue";
+import CardInput from "./CardInput.vue";
 import SelectInput from "./SelectInput.vue";
 import ThankYou from "./ThankYou.vue";
 import Datepicker from "@vuepic/vue-datepicker";
@@ -22,7 +22,7 @@ const data = reactive({
 const name = ref("");
 const email = ref("");
 const tel = ref("");
-const date = ref("");
+const date = ref(new Date());
 const selected = ref("");
 const rejected = ref(false);
 const disabled = ref(false);
@@ -30,14 +30,20 @@ const responseOK = ref(false);
 
 const Submit = async () => {
   disabled.value = true;
-  const formatDate = date.value ? date.value.toISOString().split("T")[0] : "";
+
+  const formatDate = (date_val) => {
+    const day = date_val.getDate();
+    const month = date_val.getMonth() + 1;
+    const year = date_val.getFullYear();
+    return `${year}-${month}-${day}`;
+  };
 
   try {
     const res = await PostService.insertAppointment(
       name.value,
       email.value,
       tel.value,
-      formatDate,
+      formatDate(date.value),
       selected.value
     );
     if (res.status === 201) {
