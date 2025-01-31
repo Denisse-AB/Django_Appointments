@@ -4,7 +4,7 @@ Single Page Application (SPA) to make appointments using Vue 3 composition API, 
 
 ## Requirements
 
-Vue 3 | Python ^3.9.4 | Postgressql
+Vue 3 | Python ^3.9.4 | PostgreSQL
 
 ## Description
 
@@ -23,7 +23,7 @@ frontend Demo
 - Create a new directory
 - cd to your new directory
 
-- Create the virtual environment
+- Create a virtual environment
   - [Instructions to create the .env](https://docs.djangoproject.com/en/3.2/howto/windows/#setting-up-a-virtual-environment/).
   - [Virtual Environment](https://docs.python.org/3/tutorial/venv.html).
 
@@ -50,7 +50,7 @@ pip install -r requirements.txt
 - Create superuser
 
 ```python
-# Mac and Linux use python instead of py
+# Mac and Linux use Python instead of py
 py manage.py makemigrations
 py manage.py migrate
 py manage.py createsuperuser
